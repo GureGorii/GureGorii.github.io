@@ -34,7 +34,7 @@ class Post(db.Model):
     keyword = db.Column(db.String(50), nullable=False)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/app/', methods=['GET', 'POST'])
 def search():
     if request.method == 'GET':
         # GETでアクセスされた時、searchを表示
